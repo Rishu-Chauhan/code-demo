@@ -55,6 +55,6 @@ public class SearchInLL {
         ll.addFirst(2);
         ll.addFirst(1);
         ll.printLL();
-       System.out.println( ll.searchKey(3));
+       System.out.println( "List is found at index="+ll.searchKey(3));
     }
 }

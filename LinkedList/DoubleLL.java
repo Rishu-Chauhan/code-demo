@@ -12,7 +12,7 @@ public class DoubleLL {
     }
     public static Node head;
          public static Node tail;
-         public static int size;
+         public  int size;
     //addfirst
     public void addFirst(int data){
         Node newNode=new Node(data);

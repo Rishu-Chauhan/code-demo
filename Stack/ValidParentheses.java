@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Scanner;
 public class ValidParentheses {
     public static boolean isValid(String str){
       Stack<Character> s=new Stack<>();
@@ -29,7 +30,14 @@ public class ValidParentheses {
       }
     }
     public static void main(String[] args) {
-        String str="{(()[]}";
-        System.out.println(isValid(str));
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter the parentheses:");
+        String str=sc.next();
+        if(isValid(str)){
+          System.out.println("Valid parentheses");
+        }
+        else{
+          System.out.println("Not valid parentheses:");
+        }
     }
 }
